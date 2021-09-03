@@ -1,0 +1,6 @@
+testcases\CreatePortolioTest.class
+testcases\rediff\StockManagement.class
+listener\MyTestNGListener.class
+testcases\rediff\Session.class
+testbase\BaseTest.class
+testcases\rediff\PortfolioManagement.class

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Stock Management]">
+  <listeners>
+    <listener class-name="listener.MyTestNGListener"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Add New Stock Test(failed)">
+    <parameter name="action" value="addstock"/>
+    <classes>
+      <class name="testcases.rediff.StockManagement">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="quit"/>
+          <include name="verifyStockQuantity"/>
+          <include name="verifyStockPresent"/>
+          <include name="verifyTransactionHistory"/>
+        </methods>
+      </class> <!-- testcases.rediff.StockManagement -->
+      <class name="testcases.rediff.PortfolioManagement">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="selectPortFolio"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- testcases.rediff.PortfolioManagement -->
+    </classes>
+  </test> <!-- Add New Stock Test(failed) -->
+  <test thread-count="5" verbose="0" name="Modify Stock Test - Sell Stock(failed)">
+    <parameter name="action" value="sellstock"/>
+    <classes>
+      <class name="testcases.rediff.StockManagement">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="modifyStock"/>
+          <include name="quit"/>
+          <include name="verifyStockQuantity"/>
+          <include name="verifyStockPresent"/>
+          <include name="verifyTransactionHistory"/>
+        </methods>
+      </class> <!-- testcases.rediff.StockManagement -->
+      <class name="testcases.rediff.PortfolioManagement">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="selectPortFolio"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- testcases.rediff.PortfolioManagement -->
+    </classes>
+  </test> <!-- Modify Stock Test - Sell Stock(failed) -->
+  <test thread-count="5" verbose="0" name="Modify Stock Test - Add Stock(failed)">
+    <parameter name="action" value="addstock"/>
+    <classes>
+      <class name="testcases.rediff.StockManagement">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="modifyStock"/>
+          <include name="quit"/>
+          <include name="verifyStockQuantity"/>
+          <include name="verifyStockPresent"/>
+          <include name="verifyTransactionHistory"/>
+        </methods>
+      </class> <!-- testcases.rediff.StockManagement -->
+      <class name="testcases.rediff.PortfolioManagement">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="selectPortFolio"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- testcases.rediff.PortfolioManagement -->
+    </classes>
+  </test> <!-- Modify Stock Test - Add Stock(failed) -->
+</suite> <!-- Failed suite [Stock Management] -->

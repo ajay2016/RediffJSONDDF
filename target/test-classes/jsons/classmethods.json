@@ -1,0 +1,21 @@
+{
+    "key":"xxxxxx",
+    "key1":["xx","ss","uu"],
+    "key2":{"x":"y"},
+	"classdetails":[
+		{
+		 "class":"testcases.rediff.Session",
+		 "methods":["doLogin","doLogout"]
+		},
+		{
+		 "class":"testcases.rediff.PortfolioManagement",
+		 "methods":["createPortfolio","deletePortfolio","selectPortFolio"]
+		},
+		{
+		 "class":"testcases.rediff.StockManagement",
+		 "methods":["addNewStock","modifyStock","verifyStockPresent","verifyStockQuantity","verifyStockAvgBuyPrice","verifyTransactionHistory"]
+		}
+		
+		
+	]
+}
